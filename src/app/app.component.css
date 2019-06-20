@@ -1,6 +1,17 @@
 p {
   font-family: Lato;
 }
+
+button, input {
+    overflow: visible;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 @media (max-width: 767px) {
   .side_menu {
     display: none;
@@ -27,16 +38,76 @@ p {
   width: 100%;
 }
 .side_menu{
-  border-radius: 25px;
+  border-radius: 10px;
   border: 1px solid #73AD21;
   margin: 5px;
   padding: 10px;
-  width :400px;
+  width :450px;
 }
 .main_content{
   border-radius: 10px;
   border: 1px solid #73AD21;
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
   width: 90%;
+}
+
+/* Side Panel CSS */
+.panel{
+  margin-bottom: 25px;
+}
+
+.panel .panel-title {
+    border-bottom: 1px dotted #2196f3;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.panel-search{
+  
+}
+.panel-search .panel-body {
+    overflow: hidden;
+    margin-top: 5px;
+}
+.panel-search .panel-body .search-field {
+    width: 69%;
+    float: left;
+    margin-right: 3px;
+}
+.panel-search .panel-body .search-button {
+    width: 30%;
+    float: right;
+}
+.panel-random-words{
+
+}
+.panel-categories{
+
+}
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+}
+.btn {
+    font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+    font-weight: 700;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+form .btn {
+    margin-right: 5px;
+}
+.text-success {
+    color: #73AD21 !important;
 }
