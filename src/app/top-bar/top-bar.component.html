@@ -1,0 +1,23 @@
+<div class = "top_bar_main">
+  <div>
+    <a [routerLink]="['/']">
+      <img class="logo_img" src="{{assets_ref}}ittango_logo.png">
+    </a>
+  </div>
+
+  <div class="nav-sidebar">
+    <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'home']"></fa-icon> Home</a>
+    <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'list']"></fa-icon> Danh Mục</a>
+    <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> Thông Tin</a>
+    <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'comment']"></fa-icon> Góp ý</a>
+  </div>
+  <div class="nav-menu-button nav-link" (click)="navMenuClick()">
+    <fa-icon [icon]="['fas', 'bars']" size="2x"></fa-icon>
+  </div>
+</div>
+<ul class="top_bar_dropdown" [style.display]="menu_dropdown_display">
+  <li><a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'home']"></fa-icon> Home</a></li>
+  <li><a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'list']"></fa-icon> Danh Mục</a></li>
+  <li><a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> Thông Tin</a></li>
+  <li><a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'comment']"></fa-icon> Góp ý</a></li>
+</ul>

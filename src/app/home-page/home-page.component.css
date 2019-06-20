@@ -1,0 +1,12 @@
+/*.homepage_contain{
+
+}*/
+*{
+  margin:0px;
+  padding:0px;
+}
+.intro_img{
+  border-radius: 10px;
+  width:100%;
+  display: block;
+}

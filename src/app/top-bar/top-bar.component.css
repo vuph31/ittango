@@ -1,0 +1,43 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.logo_img{
+  height: 60px;
+}
+
+.nav-link{
+  color:white;
+  padding: 20px;
+}
+.nav-link:hover{
+  color:#92ff5b;
+}
+/*tablet-phone*/
+@media (max-width: 767px) {
+  .nav-sidebar {
+    display: none;
+  }
+  .nav-menu-button {
+    display: block;
+    color:white;
+    padding: 20px;
+  }
+}
+
+/*computer*/
+@media (min-width: 767px) {
+  .nav-sidebar {
+    display: block;
+  }
+  .nav-menu-button {
+    display: none;
+  }
+  .top_bar_dropdown{
+    display: none !important;
+  }
+}
+.top_bar_dropdown li{
+  padding: 2px 0px;
+}
