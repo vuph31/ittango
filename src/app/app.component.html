@@ -7,11 +7,11 @@
   <main class = "main_content">
     <div class="panel panel-with-bottom panel-search">
       <!--h3 class=".panel-title-noneborder text-success"><fa-icon [icon]="['fas', 'search']"></fa-icon> Tìm kiếm</h3-->
-      <i class="search-hint"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> English, Vietnamese, Japanese</i>
+      <i class="search-hint"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> Search by English, Vietnamese or Japanese</i>
       <div class="panel-body">
         <form class="word_search" [formGroup]="wordSearchForm" (ngSubmit)="onSubmit(wordSearchForm.value)" accept-charset="UTF-8" >
           <div class="search-field">
-            <input placeholder="Nhập và nhấn ENTER" class="form-control" type="search" name="search_word" formControlName="search_word">
+            <input placeholder="Type then press Enter" class="form-control" type="search" name="search_word" formControlName="search_word">
           </div>
           <div class="search-button">
             <button name="button" type="submit" class="btn btn-primary">
@@ -27,7 +27,7 @@
   <aside class="side_menu">
     <img class="intro_img" src="{{assets_ref}}my_ittango_intro_4.png">
     <div class="panel panel-random-words">
-      <h3 class="panel-title text-success"><fa-icon [icon]="['fas', 'desktop']"></fa-icon> Từ Trong Ngày</h3>
+      <h3 class="panel-title text-success"><fa-icon [icon]="['fas', 'desktop']"></fa-icon> Từ Của Ngày</h3>
       <p>test</p>
       <p>test</p>
       <p>test</p>
