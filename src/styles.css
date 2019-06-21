@@ -12,7 +12,8 @@
 
 body {
   margin: 0;
-  background: #FBFEFF;
+  background-color: rgba(250, 248, 142, 0.274);
+  background-image: url(https://hanhtrinhbrse.com/assets/wood-pattern.png);
 }
 
 router-outlet + *  {

@@ -98,6 +98,7 @@ input, button, select, optgroup, textarea {
 [type="search"] {
     outline-offset: -2px;
     -webkit-appearance: none;
+    background-color: rgb(251, 255, 190);
 }
 .btn {
     font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
@@ -120,4 +121,10 @@ form .btn {
 }
 .text-success {
     color: #73AD21 !important;
+}
+.intro_img{
+  border-radius: 10px;
+  width:100%;
+  display: block;
+  margin-bottom: 25px;
 }

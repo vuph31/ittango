@@ -18,6 +18,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class AppComponent  {
   wordSearchForm;
+  assets_ref = "https://hanhtrinhbrse.com/assets/";
   constructor(
     private formBuilder: FormBuilder,
     @Inject(DOCUMENT) document
