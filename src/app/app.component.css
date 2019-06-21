@@ -34,7 +34,7 @@ input, button, select, optgroup, textarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 70px;
   width: 100%;
 }
 .side_menu{
@@ -56,6 +56,15 @@ input, button, select, optgroup, textarea {
 .panel{
   margin-bottom: 25px;
 }
+.panel-with-bottom{
+  border-bottom: 1px dotted #2196f3;
+  padding-bottom: 5px;
+}
+
+.panel .panel-title-noneborder {
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
 
 .panel .panel-title {
     border-bottom: 1px dotted #2196f3;
@@ -71,13 +80,13 @@ input, button, select, optgroup, textarea {
     margin-top: 5px;
 }
 .panel-search .panel-body .search-field {
-    width: 69%;
+    width: 84%;
     float: left;
     margin-right: 3px;
 }
 .panel-search .panel-body .search-button {
-    width: 30%;
-    float: right;
+    width: 15%;
+    float: left;
 }
 .panel-random-words{
 
@@ -107,6 +116,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 form .btn {
     margin-right: 5px;
+    color: white;
 }
 .text-success {
     color: #73AD21 !important;

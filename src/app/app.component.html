@@ -1,16 +1,12 @@
 <header>
-  <app-top-bar></app-top-bar>
+  <app-top-bar id="navbar" class="sticky"></app-top-bar>
 </header>
 
 <section class="container">
   
   <main class = "main_content">
-    <router-outlet></router-outlet>
-  </main>
-
-  <aside class="side_menu">
-    <div class="panel panel-search">
-      <h3 class="panel-title text-success"><fa-icon [icon]="['fas', 'search']"></fa-icon> Tìm kiếm</h3>
+    <div class="panel panel-with-bottom panel-search">
+      <!--h3 class=".panel-title-noneborder text-success"><fa-icon [icon]="['fas', 'search']"></fa-icon> Tìm kiếm</h3-->
       <i class="search-hint"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> English, Vietnamese, Japanese, Furigana</i>
       <div class="panel-body">
         <form class="word_search" [formGroup]="wordSearchForm" (ngSubmit)="onSubmit(wordSearchForm.value)" accept-charset="UTF-8" >
@@ -19,13 +15,30 @@
           </div>
           <div class="search-button">
             <button name="button" type="submit" class="btn btn-primary">
-            <i class="fa fa-search"></i> Tìm</button>
+              <fa-icon [icon]="['fas', 'search']"></fa-icon>
+            </button>
           </div>
         </form>
       </div>
     </div>
+    <router-outlet></router-outlet>
+  </main>
+
+  <aside class="side_menu">
+    
     <div class="panel panel-random-words">
       <h3 class="panel-title text-success"><fa-icon [icon]="['fas', 'desktop']"></fa-icon> Từ Trong Ngày</h3>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
       <p>test</p>
       <p>test</p>
       <p>test</p>
@@ -55,6 +68,21 @@
       <p>test</p>
       <p>test</p>
       <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
+      <p>test</p>
     </div>
   </aside>
 </section>
+<footer>
+  <p>Created by <a target="_blank" href="https://www.facebook.com/vuphvn">Phạm Hoàng Vũ</a></p>
+  <p>（ファム　ホアン　ブゥ）</p>
+</footer>

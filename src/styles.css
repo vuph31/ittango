@@ -67,7 +67,7 @@ label {
   text-transform: uppercase;
 }
 
-/* Button */
+/* Button 
 .button, button {
   display: inline-flex;
   align-items: center;
@@ -78,7 +78,7 @@ label {
   background-color: #1976d2;
   color: white;
   border: none;
-}
+}*/
 
 .button:hover, button:hover {
   opacity: 0.8;
@@ -134,6 +134,20 @@ app-top-bar h1 {
   margin: 0;
 }
 
+/*Footer*/
+footer{
+  background: #4F4F4F;
+  
+  
+  width: 100%;
+  border-top: 3px solid #8345ec;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+  display: block;
+}
+
 /* Checkout Cart, Shipping Prices */
 
 .cart-item, .shipping-item {
@@ -180,4 +194,11 @@ app-top-bar h1 {
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.sticky {
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
