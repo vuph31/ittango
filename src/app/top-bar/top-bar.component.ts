@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ModalService } from '../modal.service';
+import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class TopBarComponent implements OnInit {
   assets_ref = "https://hanhtrinhbrse.com/assets/";
   menu_dropdown_display = "none";
-  constructor() { }
+  constructor(
+    private modalService:ModalService
+  ) { }
 
   ngOnInit() {
   }
@@ -18,6 +21,13 @@ export class TopBarComponent implements OnInit {
     }else{
       this.menu_dropdown_display = "none"
     }
+  }
+
+  initLoginModal() {
+    let inputs = {
+      isMobile: false
+    }
+    this.modalService.init(LoginComponent, inputs, {});
   }
 }
 

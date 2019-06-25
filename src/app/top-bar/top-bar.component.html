@@ -10,10 +10,10 @@
     <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'list']"></fa-icon> Danh Mục</a>
     <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> Thông Tin</a>
     <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'comment']"></fa-icon> Góp ý</a>
-    <a class="nav-link" (click)="navMenuClick()"><fa-icon [icon]="['fas', 'sign-in-alt']"></fa-icon> Đăng Nhập</a>
+    <a class="nav-link" (click)="initLoginModal()"><fa-icon [icon]="['fas', 'sign-in-alt']"></fa-icon> Đăng Nhập</a>
   </div>
   <div class="nav-menu-button" >
-    <fa-icon class="nav-link-nonepadding" [icon]="['fas', 'sign-in-alt']" size="2x" (click)="navMenuClick()"></fa-icon>
+    <fa-icon class="nav-link-nonepadding" [icon]="['fas', 'sign-in-alt']" size="2x" (click)="initLoginModal()"></fa-icon>
     <fa-icon class="nav-link-nonepadding" [icon]="['fas', 'bars']" size="2x" (click)="navMenuClick()"></fa-icon>
   </div>
 </div>
@@ -23,3 +23,4 @@
   <li><a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> Thông Tin</a></li>
   <li><a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'comment']"></fa-icon> Góp ý</a></li>
 </ul>
+

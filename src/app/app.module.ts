@@ -7,12 +7,14 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
-//import {AmexioWidgetModule} from 'amexio-ng-extensions';
 
 //import { far, } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 //import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { LoginComponent } from './login/login.component';
+import { DomService } from './dom.service';
+import { ModalService } from './modal.service';
 library.add(faTwitter);
 //library.add(faHome);
 library.add(fas);
@@ -27,11 +29,16 @@ library.add(fas);
       { path: '', component: HomePageComponent },
     ])
   ],
+  entryComponents:[
+    LoginComponent
+  ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    HomePageComponent
+    HomePageComponent,
+    LoginComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [DomService, ModalService]
 })
 export class AppModule { }
