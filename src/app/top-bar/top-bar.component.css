@@ -11,7 +11,13 @@
   color:white;
   padding: 20px;
 }
+.nav-link-nonepadding{
+  color:white;
+}
 .nav-link:hover{
+  color:#92ff5b;
+}
+.nav-link-nonepadding:hover{
   color:#92ff5b;
 }
 /*tablet-phone*/
@@ -23,6 +29,9 @@
     display: block;
     color:white;
     padding: 20px;
+  }
+  .nav-menu-button fa-icon {
+    margin-left: 10px;
   }
 }
 

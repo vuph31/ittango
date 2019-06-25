@@ -10,9 +10,11 @@
     <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'list']"></fa-icon> Danh Mục</a>
     <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'info-circle']"></fa-icon> Thông Tin</a>
     <a class="nav-link" [routerLink]="['/']"><fa-icon [icon]="['fas', 'comment']"></fa-icon> Góp ý</a>
+    <a class="nav-link" (click)="navMenuClick()"><fa-icon [icon]="['fas', 'sign-in-alt']"></fa-icon> Đăng Nhập</a>
   </div>
-  <div class="nav-menu-button nav-link" (click)="navMenuClick()">
-    <fa-icon [icon]="['fas', 'bars']" size="2x"></fa-icon>
+  <div class="nav-menu-button" >
+    <fa-icon class="nav-link-nonepadding" [icon]="['fas', 'sign-in-alt']" size="2x" (click)="navMenuClick()"></fa-icon>
+    <fa-icon class="nav-link-nonepadding" [icon]="['fas', 'bars']" size="2x" (click)="navMenuClick()"></fa-icon>
   </div>
 </div>
 <ul class="top_bar_dropdown" [style.display]="menu_dropdown_display">
