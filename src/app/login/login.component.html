@@ -1,10 +1,24 @@
-<div class="sample-container">
-  <div class="sample-text">
-    This is the sample modal
-  </div>
-  <div class="sample-close">
-    <button (click)="close()">
-      Close Modal
-    </button>
-  </div>
+<div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		<form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)" >
+			<input type="text" placeholder="Username" formControlName="login_user">
+			<input type="password" placeholder="Password" formControlName="login_password">
+			<button type="submit" id="login-button">Login</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 </div>

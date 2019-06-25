@@ -11,7 +11,6 @@ input, button, select, optgroup, textarea {
     font-size: inherit;
     line-height: inherit;
 }
-
 @media (max-width: 767px) {
   .side_menu {
     display: none;
@@ -94,30 +93,13 @@ input, button, select, optgroup, textarea {
 .panel-categories{
 
 }
-
 [type="search"] {
-    outline-offset: -2px;
-    -webkit-appearance: none;
-    background-color: rgb(251, 255, 190);
-}
-.btn {
-    font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-    font-weight: 700;
-}
-
-button, [type="button"], [type="reset"], [type="submit"] {
-    -webkit-appearance: button;
-}
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
-}
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
-    cursor: pointer;
+    
+    width: 100%;
 }
 
 form .btn {
     margin-right: 5px;
-    color: white;
 }
 .text-success {
     color: #73AD21 !important;

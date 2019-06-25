@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
 import { FormBuilder } from '@angular/forms';
-
+import { ModalService } from './modal.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,6 +20,7 @@ export class AppComponent  {
   wordSearchForm;
   assets_ref = "https://hanhtrinhbrse.com/assets/";
   constructor(
+    private modalService:ModalService,
     private formBuilder: FormBuilder,
     @Inject(DOCUMENT) document
   ) {
@@ -29,6 +30,11 @@ export class AppComponent  {
     }
   ngOnInit() {
   }
+
+  public close() {
+    this.modalService.destroy();
+  }
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
      /*if (window.pageYOffset > 68) {
