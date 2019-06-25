@@ -1,15 +1,9 @@
-p {
-  font-family: Lato;
-}
 
 button, input {
     overflow: visible;
 }
 input, button, select, optgroup, textarea {
     margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
 }
 @media (max-width: 767px) {
   .side_menu {
